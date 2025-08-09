@@ -96,7 +96,7 @@ export default function Navbar() {
 
       {/* Overlay - only mobile */}
       <div
-        className={`fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
+        className={`fixed inset-0 bg-white bg-opacity-40 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
           menu ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         } z-40`}
         style={{ paddingTop: 'env(safe-area-inset-top)' }}
