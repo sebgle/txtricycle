@@ -13,6 +13,14 @@ export default function Navbar() {
   };
 
   useEffect(() => {
+    const handleResize = () => {
+      setMenu(false);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
     if (menu) {
       document.body.style.overflow = 'hidden';
     } else {
@@ -28,11 +36,14 @@ export default function Navbar() {
     { href: '/events', label: 'Events' },
     { href: '/gallery', label: 'Gallery' },
     { href: '/contact', label: 'Contact' },
-    { href: '/join', label: 'Join', special: true }, 
+    { href: '/join', label: 'Join', special: true },
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-md select-none">
+    <nav
+      className="sticky top-0 z-50 bg-white shadow-md select-none"
+      style={{ paddingTop: 'env(safe-area-inset-top)' }} 
+    >
       <div className="flex justify-between items-center p-4 max-w-5xl mx-auto">
         {/* Logo and Title */}
         <Link href="/" aria-label="Home" className="flex items-center space-x-3">
@@ -88,16 +99,21 @@ export default function Navbar() {
         className={`fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
           menu ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         } z-40`}
+        style={{ paddingTop: 'env(safe-area-inset-top)' }}
         onClick={() => setMenu(false)}
       />
 
       {/* Mobile Dropdown Menu */}
       <section
-        className={`fixed top-16 left-0 right-0 mx-auto w-[90vw] max-w-sm rounded-2xl bg-gradient-to-br from-[#BF5700] via-[#D46000] to-[#A54800] text-white shadow-2xl flex flex-col items-center space-y-8 py-10 px-6 text-2xl font-semibold tracking-wide
+        className={`fixed left-0 right-0 mx-auto w-[90vw] max-w-sm rounded-2xl bg-gradient-to-br from-[#BF5700] via-[#D46000] to-[#A54800] text-white shadow-2xl flex flex-col items-center space-y-8 py-6 px-6 text-2xl font-semibold tracking-wide
           transform transition-transform duration-300 md:hidden ${
             menu ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0 pointer-events-none'
-          } z-50`}
-        style={{ willChange: 'transform, opacity' }}
+          } z-50 overflow-y-auto`}
+        style={{
+          top: 'calc(4rem + env(safe-area-inset-top))', 
+          maxHeight: 'calc(100vh - (4rem + env(safe-area-inset-top)))', 
+          willChange: 'transform, opacity',
+        }}
       >
         {navLinks.map(({ href, label, special }) =>
           special ? (
