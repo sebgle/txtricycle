@@ -42,7 +42,7 @@ export default function Navbar() {
   return (
     <nav
       className="sticky top-0 z-50 bg-white shadow-md select-none"
-      style={{ paddingTop: 'env(safe-area-inset-top)' }} 
+      style={{ paddingTop: 'env(safe-area-inset-top)' }}
     >
       <div className="flex justify-between items-center p-4 max-w-5xl mx-auto">
         {/* Logo and Title */}
@@ -105,14 +105,18 @@ export default function Navbar() {
 
       {/* Mobile Dropdown Menu */}
       <section
-        className={`fixed left-0 right-0 mx-auto w-[90vw] max-w-sm rounded-2xl bg-gradient-to-br from-[#BF5700] via-[#D46000] to-[#A54800] text-white shadow-2xl flex flex-col items-center space-y-8 py-6 px-6 text-2xl font-semibold tracking-wide
-          transform transition-transform duration-300 md:hidden ${
-            menu ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0 pointer-events-none'
-          } z-50 overflow-y-auto`}
+        className={`fixed left-0 right-0 mx-auto w-[90vw] max-w-sm rounded-2xl
+          bg-gradient-to-br from-[#BF5700] via-[#D46000] to-[#A54800] text-white
+          shadow-2xl flex flex-col items-center space-y-8 py-6 px-6 text-2xl font-semibold tracking-wide
+          transform transition-transform duration-300 md:hidden
+          ${menu ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0 pointer-events-none'}
+          overflow-y-auto`}
         style={{
-          top: 'calc(4rem + env(safe-area-inset-top))', 
-          maxHeight: 'calc(100vh - (4rem + env(safe-area-inset-top)))', 
+          top: 'calc(4rem + env(safe-area-inset-top))',
+          maxHeight: 'calc(100vh - (4rem + env(safe-area-inset-top)))',
           willChange: 'transform, opacity',
+          WebkitOverflowScrolling: 'touch',
+          paddingBottom: '1.5rem',
         }}
       >
         {navLinks.map(({ href, label, special }) =>
