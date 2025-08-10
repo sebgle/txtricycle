@@ -23,7 +23,7 @@ export default function Hero() {
         <span className="block absolute top-0 left-0 w-full h-full text-transparent stroke-[1.5px] stroke-black -z-10 select-none pointer-events-none">
             UT Austin Triathlon &amp; Cycling Club
         </span>
-        UT Austin's <br />
+        UT Austin&apos;s <br />
         <span className="text-[#BF5700]">Triathlon &amp; Cycling</span> Club
         </h1>
 
