@@ -31,7 +31,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "About", href: "/about" },
-    { name: "Events", href: "/events" },
+    { name: "Calendar", href: "/calendar" },
     { name: "Media", href: "/media" },
     { name: "Join", href: "/join" },
   ];
@@ -102,7 +102,7 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 bg-white flex flex-col pt-16 px-8 z-50 overflow-y-auto" // ← added overflow-y-auto
+            className="fixed inset-0 bg-white flex flex-col pt-16 px-8 z-50 overflow-y-auto" 
             initial={{ y: "-100%", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: "-100%", opacity: 0 }}
@@ -119,7 +119,7 @@ export default function Navbar() {
               </button>
             </div>
 
-            <nav className="flex flex-col space-y-8 text-center pb-16"> {/* added pb-16 for extra bottom spacing */}
+            <nav className="flex flex-col space-y-8 text-center pb-16"> 
               {navLinks.map((link) => {
                 if (link.name === "Join") {
                   return (
