@@ -92,7 +92,7 @@ export default function AboutPage() {
           href="/join"
           className="inline-block bg-white text-[#BF5700] px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition"
         >
-          Get Involved
+          Join Now!
         </a>
       </section>
     </main>

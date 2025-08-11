@@ -32,7 +32,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "About", href: "/about" },
     { name: "Calendar", href: "/calendar" },
-    { name: "Media", href: "/media" },
+    { name: "Contact", href: "/contact" },
     { name: "Join", href: "/join" },
   ];
 
