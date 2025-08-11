@@ -102,7 +102,7 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 bg-white flex flex-col pt-16 px-8 z-50"
+            className="fixed inset-0 bg-white flex flex-col pt-16 px-8 z-50 overflow-y-auto" // ← added overflow-y-auto
             initial={{ y: "-100%", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: "-100%", opacity: 0 }}
@@ -119,7 +119,7 @@ export default function Navbar() {
               </button>
             </div>
 
-            <nav className="flex flex-col space-y-8 text-center">
+            <nav className="flex flex-col space-y-8 text-center pb-16"> {/* added pb-16 for extra bottom spacing */}
               {navLinks.map((link) => {
                 if (link.name === "Join") {
                   return (
@@ -128,15 +128,14 @@ export default function Navbar() {
                       href={link.href}
                       onClick={() => setIsOpen(false)}
                       className="mx-auto px-10 py-4 rounded-full bg-[#BF5700] text-white font-bold uppercase tracking-wide shadow-md
-                                 hover:bg-[#D16100] hover:shadow-lg
-                                 active:scale-95
-                                 transition duration-300 ease-in-out"
+                                hover:bg-[#D16100] hover:shadow-lg
+                                active:scale-95
+                                transition duration-300 ease-in-out"
                     >
                       {link.name}
                     </Link>
                   );
                 }
-
                 return (
                   <Link
                     key={link.name}
