@@ -28,7 +28,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="max-w-4xl mx-auto p-6 bg-white rounded shadow-md py-24">
+    <section className="max-w-4xl mx-auto p-6 bg-white shadow-md py-24">
       <h1 className="text-4xl py-5 text-center font-bold text-[#BF5700] mb-2">
         Connect with Us
       </h1>

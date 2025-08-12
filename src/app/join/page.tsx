@@ -1,6 +1,6 @@
 export default function Join() {
   return (
-    <section className="max-w-3xl mx-auto px-6 py-24 bg-white rounded shadow-md text-black">
+    <section className="max-w-3xl mx-auto px-6 py-24 bg-white shadow-md text-black">
       <h1 className="text-4xl py-5 text-center font-bold text-[#BF5700] mb-6">
         How to Join
       </h1>
