@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section
-      className="relative pt-24 min-h-[100vh] flex items-center justify-center bg-[#BF5700]"
+      className="relative min-h-[100vh] flex items-center justify-center bg-[#BF5700]"
     >
       {/* Background Image */}
       <div className="absolute inset-0">
