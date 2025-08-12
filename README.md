@@ -1,5 +1,5 @@
 
-# txtricycle
+# Texas Triathlon & Cycling Club website
 
 A responsive web app built with Next.js and Tailwind CSS to showcase the Texas Triathlon and Cycling Club’s events and community.
 
