@@ -29,7 +29,7 @@ export default function Hero() {
         >
           Swim. Ride. Run.
           <span className="block mt-2 text-white">
-            UT Austin's Triathlon & Cycling Club
+            UT Austin&apos;s Triathlon & Cycling Club
           </span>
         </motion.h1>
 
