@@ -5,10 +5,10 @@ export default function CalendarPage() {
     <section className="bg-white min-h-screen py-12 px-4 sm:px-6 lg:px-8 pt-25">
       <div className="max-w-6xl mx-auto text-center">
         {/* Header */}
-        <h1 className="text-4xl font-bold text-[#BF5700] mb-2">
+        <h1 className="text-4xl pt-5 font-bold text-[#BF5700] mb-2">
           Club Calendar
         </h1>
-        <p className="text-gray-600 mb-8">
+        <p className="text-gray-600 mb-8 pb-10">
           Stay up to date with our training sessions, races, and social events.
         </p>
 

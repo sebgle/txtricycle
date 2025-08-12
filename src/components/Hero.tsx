@@ -8,7 +8,7 @@ export default function Hero() {
     <section
       className="relative pt-24 min-h-[100vh] flex items-center justify-center bg-[#BF5700]"
     >
-      {/* Background Image with Overlay */}
+      {/* Background Image */}
       <div className="absolute inset-0">
         <img
           src="/hero.jpg" 
@@ -29,7 +29,7 @@ export default function Hero() {
         >
           Swim. Ride. Run.
           <span className="block mt-2 text-white">
-            Join the Texas Triathlon & Cycling Club
+            UT Austin's Triathlon & Cycling Club
           </span>
         </motion.h1>
 
@@ -58,7 +58,7 @@ export default function Hero() {
             Join Now
           </Link>
           <Link
-            href="/events"
+            href="/calendar"
             className="px-8 py-3 rounded-full bg-white text-[#BF5700] font-bold uppercase tracking-wide shadow-lg
                        hover:bg-gray-100 transition duration-300 ease-in-out"
           >

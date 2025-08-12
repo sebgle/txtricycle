@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <main className="bg-white text-gray-800">
+    <main className="bg-white text-gray-800 pt-5">
       {/* Hero Banner */}
       <section className="relative w-full h-64 sm:h-80 lg:h-96 overflow-hidden">
         <Image
@@ -80,7 +80,7 @@ export default function AboutPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-[#353434ea] text-white py-12 text-center p-4">
+      <section className="bg-gray-50 text-black py-12 text-center p-4 pb-24 shadow-lg">
         <h2 className="text-2xl sm:text-3xl font-bold mb-4">
           Ready to Join the Team?
         </h2>
@@ -90,7 +90,7 @@ export default function AboutPage() {
         </p>
         <a
           href="/join"
-          className="inline-block bg-white text-[#BF5700] px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition"
+          className="inline-block bg-[#BF5700] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#8b3f02] transition"
         >
           Join Now!
         </a>

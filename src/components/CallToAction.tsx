@@ -50,7 +50,7 @@ export default function CallToAction() {
         </div>
 
         {/* CTA Button */}
-        <div className="mt-12">
+        <div className="mt-18">
           <Link
             href="/join"
             className="px-10 py-4 rounded-full bg-[#BF5700] text-white font-bold uppercase tracking-wide shadow-md

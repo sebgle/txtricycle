@@ -31,8 +31,8 @@ export default function Footer() {
           <Link href="/calendar" className="hover:underline">
             Calendar
           </Link>
-          <Link href="/media" className="hover:underline">
-            Media
+          <Link href="/contact" className="hover:underline">
+            Contact
           </Link>
           <Link href="/join" className="hover:underline">
             Join
@@ -42,7 +42,7 @@ export default function Footer() {
         {/* Socials */}
         <div className="flex gap-3">
           <a
-            href="https://instagram.com"
+            href="https://instagram.com/txtriathloncycling"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -51,7 +51,7 @@ export default function Footer() {
             <Instagram size={18} />
           </a>
           <a
-            href="https://slack.com"
+            href="https://utexastriathlon.slack.com/archives/C027F3YT72L"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Slack"

@@ -69,7 +69,7 @@ export default function WeeklyEvents() {
         <p className="text-center text-gray-500 text-sm mt-10">
           All times subject to change — updates posted in our{" "}
           <a
-            href="https://slack.com" // replace with actual link
+            href="https://utexastriathlon.slack.com/archives/C027F3YT72L" 
             className="text-[#BF5700] underline hover:opacity-80"
           >
             Slack
