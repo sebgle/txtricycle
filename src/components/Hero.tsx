@@ -58,11 +58,11 @@ export default function Hero() {
             Join Now
           </Link>
           <Link
-            href="/calendar"
+            href="/about"
             className="px-8 py-3 rounded-full bg-white text-[#BF5700] font-bold uppercase tracking-wide shadow-lg
                        hover:bg-gray-100 transition duration-300 ease-in-out"
           >
-            Upcoming Events
+            Learn More
           </Link>
         </motion.div>
       </div>

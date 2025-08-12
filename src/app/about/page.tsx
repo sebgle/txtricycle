@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import WeeklyEvents from "@/components/WeeklyEvents";
 
 export default function AboutPage() {
   return (
@@ -78,6 +79,8 @@ export default function AboutPage() {
           </li>
         </ul>
       </section>
+
+      <WeeklyEvents />
 
       {/* Call to Action */}
       <section className="bg-gray-50 text-black py-12 text-center p-4 pb-24 shadow-lg">

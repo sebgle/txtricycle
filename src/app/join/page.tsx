@@ -1,9 +1,16 @@
 export default function Join() {
   return (
     <section className="max-w-3xl mx-auto px-6 py-24 bg-white shadow-md text-black">
-      <h1 className="text-4xl py-5 text-center font-bold text-[#BF5700] mb-6">
+      <h1 className="text-4xl py-5 text-center font-bold text-[#BF5700] mb-3">
         How to Join
       </h1>
+
+      {/* New Who Can Join Section */}
+      <section className="mb-10 text-center">
+        <p className="text-md font-light">
+          Note: Membership is open exclusively to current UT Austin students.
+        </p>
+      </section>
 
       <div className="space-y-10 text-lg leading-relaxed">
         <section>
@@ -61,7 +68,14 @@ export default function Join() {
             >
               Slack Workspace
             </a>
-            &nbsp;to get the latest updates on social events, workouts, races, volunteer opportunities, and more.
+            &nbsp;to get the latest updates on social events, workouts, races, volunteer opportunities, and more. You can also check out our&nbsp;
+            <a
+              href="/calendar"
+              className="font-semibold underline hover:text-[#914202] text-[#BF5700]"
+            >
+              event calendar
+            </a>
+            &nbsp;to stay up-to-date.
           </p>
         </section>
 
